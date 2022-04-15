@@ -42,13 +42,13 @@ remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation)
 def LemNormalize(text):
     return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
 
-Introduce_Ans = ["My name is PyBot.","My name is PyBot you can called me pi.","Im PyBot :) ","My name is PyBot. and my nickname is pi and i am happy to solve your queries :) "]
-GREETING_INPUTS = ("hello", "hi","hiii","hii","hiiii","hiiii", "greetings", "sup", "what's up","hey",)
+Introduce_Ans = ["Hello!", "Baby Center how can i help you?", "Hi there, how can I help?"]
+GREETING_INPUTS = ("Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up")
 GREETING_RESPONSES = ["hi", "hey", "hii there", "hi there", "hello", "I am glad! You are talking to me"]
-Basic_Q = ("what is python ?","what is python","what is python?","what is python.")
-Basic_Ans = "Python is a high-level, interpreted, interactive and object-oriented scripting programming language python is designed to be highly readable It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages."
-Basic_Om = ("what is module","what is module.","what is module ","what is module ?","what is module?","what is module in python","what is module in python.","what is module in python?","what is module in python ?")
-Basic_AnsM = ["Consider a module to be the same as a code library.","A file containing a set of functions you want to include in your application.","A module can define functions, classes and variables. A module can also include runnable code. Grouping related code into a module makes the code easier to understand and use."]
+Basic_Q = ("What growth milestones should you expect in your 4-month-old?","In which month my baby's growth will increase")
+Basic_Ans = "By month four, your baby’s weight will likely have doubled from birth."
+Basic_Om = ("Why do I need folic acid?", "should i take folid acid?", "is folid acid important?")
+Basic_AnsM = ["Folic acid is crucial to your baby's development in the early stages of pregnancy."]
 
 
 # Checking for greetings
